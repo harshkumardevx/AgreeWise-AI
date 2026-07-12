@@ -14,14 +14,7 @@ app.use("/api/document", documentRouter);
 app.use("/api/report", reportRouter);
 app.use("/api/history", historyRouter);
 
-// NOTE: files are now stored on Cloudinary (see src/utils/cloudinaryUpload.js),
-// not on local disk, so the old `/uploads` static route is no longer needed.
 
-// Global error handler — without this, errors thrown by multer
-// (wrong file type, file too large) or anything else bubble up to
-// Express's default handler, which returns an HTML page instead of
-// JSON. The frontend always reads `error.response.data.message`,
-// so every error needs to come back as JSON with that shape.
 app.use((err, req, res, next) => {
     console.error(err);
 
