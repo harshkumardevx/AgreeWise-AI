@@ -23,11 +23,11 @@ Generate summaries, detect risky clauses, calculate risk scores, and receive pra
 
 ### 🚀 Frontend
 
-https://agreewise-ai.vercel.app
+https://agree-wise-ai.vercel.app/
 
 ### ⚡ Backend API
 
-https://agreewise-api.onrender.com
+https://agreewise-ai.onrender.com
 
 ---
 
